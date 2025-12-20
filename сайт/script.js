@@ -9,7 +9,11 @@ const translations = {
     contact: "Контакты",
     stbt: "Начать",
     title: "EduWeb",
-    topics: "Темы"
+    topics: "Темы",
+    footerText: "© 2025 EduWeb. Футер.",
+    card1: "Основы",
+    card2: "Стили и анимации",
+    card3: "Логика и интерактив"
   },
   en: {
     home: "Home",
@@ -18,7 +22,11 @@ const translations = {
     contact: "Contacts",
     stbt: "Start",
     title: "EduWeb",
-    topics: "Topics"
+    topics: "Topics",
+    footerText: "© 2025 EduWeb. Footer.",
+    card1: "Basics",
+    card2: "Styles and Animations",
+    card3: "Logic and Interactivity"
   }
 };
 
@@ -78,3 +86,6 @@ startBtn.addEventListener("click", () => {
     window.location.href = "learn.html";
   }, 700); 
 });
+
+
+

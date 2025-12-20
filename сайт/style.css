@@ -10,19 +10,22 @@
 .bd {
   background-position: center;
   background-size: cover;
-  
+  display: flex;
+  flex-direction: column;
+  background: rgb(207, 207, 207);
 }
 .center {
   position: absolute;
   top: 40%;
-  left: 47%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .center2 {
-  position: absolute;
-  top: 15%;
-  left: 47%;
-  transform: translate(-50%, -50%);
+  min-height: calc(100vh - 90px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .start {
   padding: 15px 40px;
@@ -51,6 +54,7 @@ header {
   background-color: #1b1b1b; 
   color: white;
   position: fixed;
+  height: 90px;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -134,4 +138,134 @@ header {
 
 .transition-circle.active {
   transform: scale(150);
+}
+.box {
+  width: 80%;
+  max-width: 1200px;
+  height: 500px;
+
+  background: rgba(68, 68, 68, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 30px;
+}
+.box2 {
+  width: 80%;
+  max-width: 1200px;
+  height: 500px;
+
+  background: rgba(68, 68, 68, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 30px;
+
+  margin: 90px auto; 
+}
+
+
+.site-footer {
+  background: #0e0e0e;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.site-footer p {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+main {
+  flex: 1;
+  margin-top: 90px;
+}
+
+.topic-card {
+  text-decoration: none;
+  width: 250px;
+  height: 300px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.topic-card h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.topic-card p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+
+.topic-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.lesson-text {
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  line-height: 1.6;
+  flex: 1;
+  margin-top: 90px;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  color: #ad2020;
+  font-weight: bold;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-size: 14px;
+  z-index: 10;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
 }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="icon" href="Apple.png" type="image/png">
+      <link rel="stylesheet" href="style.css" />
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="bd">
+          <header>
+    <div class="logo">
+      <img src="Apple.png" alt="Логотип">
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="home.html" data-key="home">Главная</a></li>
+        <li><a href="about.html" data-key="about">О Cайте</a></li>
+        <li><a href="learn.html" data-key="learn">Темы</a></li>
+        <li><a href="contact.html" data-key="contact">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="language-selector">
+      <button id="lang-btn">Русский ▼</button>
+      <ul id="lang-options">
+        <li data-lang="ru">Русский</li>
+        <li data-lang="en">English</li>
+      </ul>
+    </div>
+  </header>
+    <main class="lesson-text">
+  <div>     
+    <h1 class="base">Основы HTML</h1>
+  </div> 
+
+  <p>
+    <span class="tooltip" data-tooltip="HTML — это язык разметки для создания веб-страниц.">HTML</span> 
+    позволяет создавать структуру страниц. Все элементы сайта строятся с помощью
+    <span class="tooltip" data-tooltip="Теги — это инструкции HTML для браузера.">тегов</span>, которые могут быть:
+    <span class="tooltip" data-tooltip="Блочные теги создают отдельные блоки на странице, например div, p, h1.">блочными</span> 
+    и 
+    <span class="tooltip" data-tooltip="Строчные теги влияют только на содержимое внутри строки, например span, a, strong.">строчными</span>.
+  </p>
+
+  <p>
+    Основные теги:
+    <span class="tooltip" data-tooltip="Тег <html> — корневой тег документа.">&lt;html&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег <head> содержит информацию о странице, мета-теги, ссылки на стили и скрипты.">&lt;head&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег <body> содержит видимое содержимое страницы.">&lt;body&gt;</span>.
+  </p>
+
+  <p>
+    Для текста используются:
+    <span class="tooltip" data-tooltip="Тег <h1> … <h6> создаёт заголовки разных уровней.">&lt;h1&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег <p> создаёт абзацы текста.">&lt;p&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег <strong> делает текст жирным, <em> — курсив.">&lt;strong&gt;, &lt;em&gt;</span>.
+  </p>
+
+  <p>
+    Для ссылок и изображений:
+    <span class="tooltip" data-tooltip="Тег <a> используется для создания ссылок. Атрибут href задаёт URL.">&lt;a&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег <img> вставляет изображения. Атрибут src — путь к файлу, alt — описание.">&lt;img&gt;</span>.
+  </p>
+
+  <p>
+    Атрибуты позволяют задавать свойства тегов:
+    <span class="tooltip" data-tooltip="id — уникальный идентификатор элемента.">id</span>,
+    <span class="tooltip" data-tooltip="class — класс для группировки элементов и применения стилей.">class</span>,
+    <span class="tooltip" data-tooltip="title — текст подсказки при наведении мыши.">title</span>.
+  </p>
+
+  <p>
+    HTML-структура может быть вложенной:
+    <span class="tooltip" data-tooltip="Дочерние элементы находятся внутри родительского тега.">дочерние элементы</span>,
+    <span class="tooltip" data-tooltip="Родительский элемент содержит другие теги.">родительские элементы</span>.
+    Это позволяет создавать сложные страницы с блоками, списками и таблицами.
+  </p>
+
+  <p>
+    Списки бывают двух типов:
+    <span class="tooltip" data-tooltip="Нумерованные списки (<ol>) создают пронумерованные элементы.">&lt;ol&gt;</span> и
+    <span class="tooltip" data-tooltip="Маркированные списки (<ul>) создают элементы с точками.">&lt;ul&gt;</span>.
+  </p>
+
+  <p>
+    Формы используются для взаимодействия с пользователем:
+    <span class="tooltip" data-tooltip="Тег <form> создаёт форму.">&lt;form&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег <input> создаёт поле ввода.">&lt;input&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег <button> создаёт кнопку.">&lt;button&gt;</span>.
+  </p>
+
+  <p>
+    HTML также поддерживает мультимедиа:
+    <span class="tooltip" data-tooltip="Тег <audio> для звука.">&lt;audio&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег <video> для видео.">&lt;video&gt;</span>.
+  </p>
+
+  <p>
+    И не забывай про семантику:
+    <span class="tooltip" data-tooltip="Семантические теги описывают смысл содержимого, например <header>, <footer>, <section>.">семантические теги</span>
+    помогают поисковым системам и упрощают поддержку кода.
+  </p>
+</main>
+<div class="site-footer" data-key="footerText">© 2025 EduWeb. Футер.</div>
+<script src="script.js"></script>
+</body>
+</html>

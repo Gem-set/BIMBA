@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="icon" href="Apple.png" type="image/png">
+      <link rel="stylesheet" href="style.css" />
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="bd">
+    <header>
+    <div class="logo">
+      <img src="Apple.png" alt="Логотип">
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="home.html" data-key="home">Главная</a></li>
+        <li><a href="about.html" data-key="about">О Cайте</a></li>
+        <li><a href="learn.html" data-key="learn">Темы</a></li>
+        <li><a href="contact.html" data-key="contact">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="language-selector">
+      <button id="lang-btn">Русский ▼</button>
+      <ul id="lang-options">
+        <li data-lang="ru">Русский</li>
+        <li data-lang="en">English</li>
+      </ul>
+    </div>
+  </header>
+    <main class="lesson-text">
+  <div class="center3">     
+    <h1 class="base">Основы JavaScript</h1>
+  </div> 
+
+  <p>
+    <span class="tooltip" data-tooltip="JavaScript — язык программирования для динамических элементов веб-страниц.">JavaScript</span> позволяет добавлять интерактивность: реагировать на клики, изменять содержимое страницы и создавать анимации.
+  </p>
+
+  <p>
+    Основные конструкции:
+    <span class="tooltip" data-tooltip="Переменные хранят данные, например let, const, var.">переменные</span>,
+    <span class="tooltip" data-tooltip="Условные операторы if/else выполняют код в зависимости от условий.">условия</span>,
+    <span class="tooltip" data-tooltip="Циклы for, while повторяют действия несколько раз.">циклы</span>,
+    <span class="tooltip" data-tooltip="Функции — блоки кода, которые можно вызывать многократно.">функции</span>.
+  </p>
+
+  <p>
+    Для работы с HTML используют <span class="tooltip" data-tooltip="DOM (Document Object Model) — объектная модель документа, позволяющая изменять элементы через JS.">DOM</span> и <span class="tooltip" data-tooltip="События — действия пользователя, например click, mouseover, keypress.">события</span>.
+  </p>
+
+  <p>
+    Также важно знать <span class="tooltip" data-tooltip="Методы и свойства объектов позволяют получать или изменять данные, например innerHTML, value.">методы и свойства объектов</span>, чтобы управлять элементами и данными на странице.
+  </p>
+</main>
+<div class="site-footer" data-key="footerText">© 2025 EduWeb. Футер.</div>
+<script src="script.js"></script>
+</body>
+</html>
