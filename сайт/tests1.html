@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-HTML</title>
+    <link rel="icon" href="Apple.png" type="image/png">
+      <link rel="stylesheet" href="style.css" />
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="bd">
+    <header>
+    <div class="logo">
+      <img src="Apple.png" alt="Логотип">
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="home.html" data-key="home">Главная</a></li>
+        <li><a href="about.html" data-key="about">О Cайте</a></li>
+        <li><a href="learn.html" data-key="learn">Темы</a></li>
+        <li><a href="test.html" data-key="test">Тесты</a></li>
+      </ul>
+    </nav>
+
+    <div class="language-selector">
+      <button id="lang-btn">Русский ▼</button>
+      <ul id="lang-options">
+        <li data-lang="ru">Русский</li>
+        <li data-lang="en">English</li>
+      </ul>
+    </div>
+  </header>
+<main class="test-box">
+  <h1>HTML — тест</h1>
+
+  <div class="question" data-correct="1">
+    <p>HTML — это:</p>
+    <label><input type="radio" name="q1"> Язык программирования</label>
+    <label><input type="radio" name="q1"> Язык разметки</label>
+    <label><input type="radio" name="q1"> Графический редактор</label>
+  </div>
+
+  <div class="question" data-correct="0">
+    <p>Какой тег создаёт ссылку?</p>
+    <label><input type="radio" name="q2">&lt;a&gt;</label>
+    <label><input type="radio" name="q2">&lt;div&gt;</label>
+    <label><input type="radio" name="q2">&lt;p&gt;</label>
+  </div>
+
+  <div class="question" data-correct="2">
+    <p>Где размещается видимое содержимое страницы?</p>
+    <label><input type="radio" name="q3">&lt;head&gt;</label>
+    <label><input type="radio" name="q3">&lt;title&gt;</label>
+    <label><input type="radio" name="q3">&lt;body&gt;</label>
+  </div>
+
+  <div class="question" data-correct="1">
+    <p>Какой тег создаёт абзац?</p>
+    <label><input type="radio" name="q4">&lt;div&gt;</label>
+    <label><input type="radio" name="q4">&lt;p&gt;</label>
+    <label><input type="radio" name="q4">&lt;span&gt;</label>
+  </div>
+
+  <div class="question" data-correct="0">
+    <p>Какой атрибут задаёт ссылку?</p>
+    <label><input type="radio" name="q5">href</label>
+    <label><input type="radio" name="q5">src</label>
+    <label><input type="radio" name="q5">class</label>
+  </div>
+
+  <button class="bt2" onclick="checkTest()">Проверить</button>
+  <p id="result"></p>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>

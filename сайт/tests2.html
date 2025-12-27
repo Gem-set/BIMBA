@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-CSS</title>
+    <link rel="icon" href="Apple.png" type="image/png">
+      <link rel="stylesheet" href="style.css" />
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="bd">
+    <header>
+    <div class="logo">
+      <img src="Apple.png" alt="Логотип">
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="home.html" data-key="home">Главная</a></li>
+        <li><a href="about.html" data-key="about">О Cайте</a></li>
+        <li><a href="learn.html" data-key="learn">Темы</a></li>
+        <li><a href="test.html" data-key="test">Тесты</a></li>
+      </ul>
+    </nav>
+
+    <div class="language-selector">
+      <button id="lang-btn">Русский ▼</button>
+      <ul id="lang-options">
+        <li data-lang="ru">Русский</li>
+        <li data-lang="en">English</li>
+      </ul>
+    </div>
+  </header>
+<main class="test-box">
+  <h1>CSS — тест</h1>
+
+  <div class="question" data-correct="2">
+    <p>CSS отвечает за:</p>
+    <label><input type="radio" name="q1"> Логику</label>
+    <label><input type="radio" name="q1"> Структуру</label>
+    <label><input type="radio" name="q1"> Внешний вид</label>
+  </div>
+
+  <div class="question" data-correct="1">
+    <p>Как изменить цвет текста?</p>
+    <label><input type="radio" name="q2">background</label>
+    <label><input type="radio" name="q2">color</label>
+    <label><input type="radio" name="q2">font-style</label>
+  </div>
+
+  <div class="question" data-correct="0">
+    <p>Как выбрать элемент по классу?</p>
+    <label><input type="radio" name="q3">.box</label>
+    <label><input type="radio" name="q3">#box</label>
+    <label><input type="radio" name="q3">box</label>
+  </div>
+
+  <div class="question" data-correct="2">
+    <p>Как сделать элемент flex-контейнером?</p>
+    <label><input type="radio" name="q4">position: flex</label>
+    <label><input type="radio" name="q4">display: block</label>
+    <label><input type="radio" name="q4">display: flex</label>
+  </div>
+
+  <div class="question" data-correct="1">
+    <p>Как задать внешний отступ?</p>
+    <label><input type="radio" name="q5">padding</label>
+    <label><input type="radio" name="q5">margin</label>
+    <label><input type="radio" name="q5">border</label>
+  </div>
+
+  <button class="bt2" onclick="checkTest()">Проверить</button>
+  <p id="result"></p>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>
