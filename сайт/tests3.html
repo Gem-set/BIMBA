@@ -15,7 +15,7 @@
 </head>
 <body class="bd">
     <header>
-    <div class="logo">
+    <div id="lg" class="logo">
       <img src="Apple.png" alt="Логотип">
     </div>
 
@@ -36,45 +36,45 @@
       </ul>
     </div>
   </header>
-  <main class="test-box">
-  <h1>JavaScript — тест</h1>
+  <main class="testbox">
+  <h1 class="base" data-key="tests3_title">JavaScript — тест</h1>
 
   <div class="question" data-correct="0">
-    <p>JavaScript нужен для:</p>
-    <label><input type="radio" name="q1"> Интерактива</label>
-    <label><input type="radio" name="q1"> Разметки</label>
-    <label><input type="radio" name="q1"> Стилизации</label>
+    <p data-key="tests3_q1_p">JavaScript нужен для:</p>
+    <label><input type="radio" name="q1"><span data-key="tests3_q1_a0"> Интерактива</span></label>
+    <label><input type="radio" name="q1"><span data-key="tests3_q1_a1"> Разметки</span></label>
+    <label><input type="radio" name="q1"><span data-key="tests3_q1_a2"> Стилизации</span></label>
   </div>
 
   <div class="question" data-correct="2">
-    <p>Как получить элемент по id?</p>
-    <label><input type="radio" name="q2">query()</label>
-    <label><input type="radio" name="q2">getClass()</label>
-    <label><input type="radio" name="q2">getElementById()</label>
+    <p data-key="tests3_q2_p">Как получить элемент по id?</p>
+    <label><input type="radio" name="q2"><span data-key="tests3_q2_a0">query()</span></label>
+    <label><input type="radio" name="q2"><span data-key="tests3_q2_a1">getClass()</span></label>
+    <label><input type="radio" name="q2"><span data-key="tests3_q2_a2">getElementById()</span></label>
   </div>
 
   <div class="question" data-correct="1">
-    <p>Как объявить переменную?</p>
-    <label><input type="radio" name="q3">varName = 5</label>
-    <label><input type="radio" name="q3">let x = 5</label>
-    <label><input type="radio" name="q3">int x = 5</label>
+    <p data-key="tests3_q3_p">Как объявить переменную?</p>
+    <label><input type="radio" name="q3"><span data-key="tests3_q3_a0">varName = 5</span></label>
+    <label><input type="radio" name="q3"><span data-key="tests3_q3_a1">let x = 5</span></label>
+    <label><input type="radio" name="q3"><span data-key="tests3_q3_a2">int x = 5</span></label>
   </div>
 
   <div class="question" data-correct="0">
-    <p>Как добавить обработчик клика?</p>
-    <label><input type="radio" name="q4">addEventListener()</label>
-    <label><input type="radio" name="q4">onClick()</label>
-    <label><input type="radio" name="q4">click()</label>
+    <p data-key="tests3_q4_p">Как добавить обработчик клика?</p>
+    <label><input type="radio" name="q4"><span data-key="tests3_q4_a0">addEventListener()</span></label>
+    <label><input type="radio" name="q4"><span data-key="tests3_q4_a1">onClick()</span></label>
+    <label><input type="radio" name="q4"><span data-key="tests3_q4_a2">click()</span></label>
   </div>
 
   <div class="question" data-correct="2">
-    <p>Где хранится значение языка?</p>
-    <label><input type="radio" name="q5">session</label>
-    <label><input type="radio" name="q5">cookie</label>
-    <label><input type="radio" name="q5">localStorage</label>
+    <p data-key="tests3_q5_p">Где хранится значение языка?</p>
+    <label><input type="radio" name="q5"><span data-key="tests3_q5_a0">session</span></label>
+    <label><input type="radio" name="q5"><span data-key="tests3_q5_a1">cookie</span></label>
+    <label><input type="radio" name="q5"><span data-key="tests3_q5_a2">localStorage</span></label>
   </div>
 
-  <button class="bt2" onclick="checkTest()">Проверить</button>
+  <button class="bt2" onclick="checkTest()" data-key="checkBtn">Проверить</button>
   <p id="result"></p>
 </main>
   <script src="script.js"></script>

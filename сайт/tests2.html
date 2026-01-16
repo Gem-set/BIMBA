@@ -15,7 +15,7 @@
 </head>
 <body class="bd">
     <header>
-    <div class="logo">
+    <div id="lg" class="logo">
       <img src="Apple.png" alt="Логотип">
     </div>
 
@@ -36,45 +36,45 @@
       </ul>
     </div>
   </header>
-<main class="test-box">
-  <h1>CSS — тест</h1>
+<main class="testbox">
+  <h1 class="base" data-key="tests2_title">CSS — тест</h1>
 
   <div class="question" data-correct="2">
-    <p>CSS отвечает за:</p>
-    <label><input type="radio" name="q1"> Логику</label>
-    <label><input type="radio" name="q1"> Структуру</label>
-    <label><input type="radio" name="q1"> Внешний вид</label>
+    <p data-key="tests2_q1_p">CSS отвечает за:</p>
+    <label><input type="radio" name="q1"><span data-key="tests2_q1_a0"> Логику</span></label>
+    <label><input type="radio" name="q1"><span data-key="tests2_q1_a1"> Структуру</span></label>
+    <label><input type="radio" name="q1"><span data-key="tests2_q1_a2"> Внешний вид</span></label>
   </div>
 
   <div class="question" data-correct="1">
-    <p>Как изменить цвет текста?</p>
-    <label><input type="radio" name="q2">background</label>
-    <label><input type="radio" name="q2">color</label>
-    <label><input type="radio" name="q2">font-style</label>
+    <p data-key="tests2_q2_p">Как изменить цвет текста?</p>
+    <label><input type="radio" name="q2"><span data-key="tests2_q2_a0">background</span></label>
+    <label><input type="radio" name="q2"><span data-key="tests2_q2_a1">color</span></label>
+    <label><input type="radio" name="q2"><span data-key="tests2_q2_a2">font-style</span></label>
   </div>
 
   <div class="question" data-correct="0">
-    <p>Как выбрать элемент по классу?</p>
-    <label><input type="radio" name="q3">.box</label>
-    <label><input type="radio" name="q3">#box</label>
-    <label><input type="radio" name="q3">box</label>
+    <p data-key="tests2_q3_p">Как выбрать элемент по классу?</p>
+    <label><input type="radio" name="q3"><span data-key="tests2_q3_a0">.box</span></label>
+    <label><input type="radio" name="q3"><span data-key="tests2_q3_a1">#box</span></label>
+    <label><input type="radio" name="q3"><span data-key="tests2_q3_a2">box</span></label>
   </div>
 
   <div class="question" data-correct="2">
-    <p>Как сделать элемент flex-контейнером?</p>
-    <label><input type="radio" name="q4">position: flex</label>
-    <label><input type="radio" name="q4">display: block</label>
-    <label><input type="radio" name="q4">display: flex</label>
+    <p data-key="tests2_q4_p">Как сделать элемент flex-контейнером?</p>
+    <label><input type="radio" name="q4"><span data-key="tests2_q4_a0">position: flex</span></label>
+    <label><input type="radio" name="q4"><span data-key="tests2_q4_a1">display: block</span></label>
+    <label><input type="radio" name="q4"><span data-key="tests2_q4_a2">display: flex</span></label>
   </div>
 
   <div class="question" data-correct="1">
-    <p>Как задать внешний отступ?</p>
-    <label><input type="radio" name="q5">padding</label>
-    <label><input type="radio" name="q5">margin</label>
-    <label><input type="radio" name="q5">border</label>
+    <p data-key="tests2_q5_p">Как задать внешний отступ?</p>
+    <label><input type="radio" name="q5"><span data-key="tests2_q5_a0">padding</span></label>
+    <label><input type="radio" name="q5"><span data-key="tests2_q5_a1">margin</span></label>
+    <label><input type="radio" name="q5"><span data-key="tests2_q5_a2">border</span></label>
   </div>
 
-  <button class="bt2" onclick="checkTest()">Проверить</button>
+  <button class="bt2" onclick="checkTest()" data-key="checkBtn">Проверить</button>
   <p id="result"></p>
 </main>
   <script src="script.js"></script>

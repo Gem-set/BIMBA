@@ -15,7 +15,7 @@
 </head>
 <body class="bd">
           <header>
-    <div class="logo">
+    <div id="lg" class="logo">
       <img src="Apple.png" alt="Логотип">
     </div>
 
@@ -37,75 +37,74 @@
     </div>
   </header>
     <main class="lesson-text">
-  <div>     
-    <h1 class="base">Основы HTML</h1>
-  </div> 
+  <div>
+    <h1 class="base" data-key="card1_h1">Основы HTML</h1>
+  </div>
 
-  <p>
-    <span class="tooltip" data-tooltip="HTML — это язык разметки для создания веб-страниц.">HTML</span> 
+  <p data-key="card1_p1">
+    <span class="tooltip" data-tooltip="HTML — это язык разметки для создания веб-страниц.">HTML</span>
     позволяет создавать структуру страниц. Все элементы сайта строятся с помощью
     <span class="tooltip" data-tooltip="Теги — это инструкции HTML для браузера.">тегов</span>, которые могут быть:
-    <span class="tooltip" data-tooltip="Блочные теги создают отдельные блоки на странице, например div, p, h1.">блочными</span> 
-    и 
+    <span class="tooltip" data-tooltip="Блочные теги создают отдельные блоки на странице, например div, p, h1.">блочными</span> и
     <span class="tooltip" data-tooltip="Строчные теги влияют только на содержимое внутри строки, например span, a, strong.">строчными</span>.
   </p>
 
-  <p>
+  <p data-key="card1_p2">
     Основные теги:
-    <span class="tooltip" data-tooltip="Тег <html> — корневой тег документа.">&lt;html&gt;</span>,
-    <span class="tooltip" data-tooltip="Тег <head> содержит информацию о странице, мета-теги, ссылки на стили и скрипты.">&lt;head&gt;</span>,
-    <span class="tooltip" data-tooltip="Тег <body> содержит видимое содержимое страницы.">&lt;body&gt;</span>.
+    <span class="tooltip" data-tooltip="Тег &lt;html&gt; — корневой тег документа.">&lt;html&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег &lt;head&gt; содержит информацию о странице, мета-теги, ссылки на стили и скрипты.">&lt;head&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег &lt;body&gt; содержит видимое содержимое страницы.">&lt;body&gt;</span>.
   </p>
 
-  <p>
+  <p data-key="card1_p3">
     Для текста используются:
-    <span class="tooltip" data-tooltip="Тег <h1> … <h6> создаёт заголовки разных уровней.">&lt;h1&gt;</span>,
-    <span class="tooltip" data-tooltip="Тег <p> создаёт абзацы текста.">&lt;p&gt;</span>,
-    <span class="tooltip" data-tooltip="Тег <strong> делает текст жирным, <em> — курсив.">&lt;strong&gt;, &lt;em&gt;</span>.
+    <span class="tooltip" data-tooltip="Тег &lt;h1&gt; … &lt;h6&gt; создаёт заголовки разных уровней.">&lt;h1&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег &lt;p&gt; создаёт абзацы текста.">&lt;p&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег &lt;strong&gt; делает текст жирным, &lt;em&gt; — курсив.">&lt;strong&gt;, &lt;em&gt;</span>.
   </p>
 
-  <p>
+  <p data-key="card1_p4">
     Для ссылок и изображений:
-    <span class="tooltip" data-tooltip="Тег <a> используется для создания ссылок. Атрибут href задаёт URL.">&lt;a&gt;</span>,
-    <span class="tooltip" data-tooltip="Тег <img> вставляет изображения. Атрибут src — путь к файлу, alt — описание.">&lt;img&gt;</span>.
+    <span class="tooltip" data-tooltip="Тег &lt;a&gt; используется для создания ссылок. Атрибут href задаёт URL.">&lt;a&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег &lt;img&gt; вставляет изображения. Атрибут src — путь к файлу, alt — описание.">&lt;img&gt;</span>.
   </p>
 
-  <p>
+  <p data-key="card1_p5">
     Атрибуты позволяют задавать свойства тегов:
     <span class="tooltip" data-tooltip="id — уникальный идентификатор элемента.">id</span>,
     <span class="tooltip" data-tooltip="class — класс для группировки элементов и применения стилей.">class</span>,
     <span class="tooltip" data-tooltip="title — текст подсказки при наведении мыши.">title</span>.
   </p>
 
-  <p>
+  <p data-key="card1_p6">
     HTML-структура может быть вложенной:
     <span class="tooltip" data-tooltip="Дочерние элементы находятся внутри родительского тега.">дочерние элементы</span>,
     <span class="tooltip" data-tooltip="Родительский элемент содержит другие теги.">родительские элементы</span>.
     Это позволяет создавать сложные страницы с блоками, списками и таблицами.
   </p>
 
-  <p>
+  <p data-key="card1_p7">
     Списки бывают двух типов:
-    <span class="tooltip" data-tooltip="Нумерованные списки (<ol>) создают пронумерованные элементы.">&lt;ol&gt;</span> и
-    <span class="tooltip" data-tooltip="Маркированные списки (<ul>) создают элементы с точками.">&lt;ul&gt;</span>.
+    <span class="tooltip" data-tooltip="Нумерованные списки (&lt;ol&gt;) создают пронумерованные элементы.">&lt;ol&gt;</span> и
+    <span class="tooltip" data-tooltip="Маркированные списки (&lt;ul&gt;) создают элементы с точками.">&lt;ul&gt;</span>.
   </p>
 
-  <p>
+  <p data-key="card1_p8">
     Формы используются для взаимодействия с пользователем:
-    <span class="tooltip" data-tooltip="Тег <form> создаёт форму.">&lt;form&gt;</span>,
-    <span class="tooltip" data-tooltip="Тег <input> создаёт поле ввода.">&lt;input&gt;</span>,
-    <span class="tooltip" data-tooltip="Тег <button> создаёт кнопку.">&lt;button&gt;</span>.
+    <span class="tooltip" data-tooltip="Тег &lt;form&gt; создаёт форму.">&lt;form&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег &lt;input&gt; создаёт поле ввода.">&lt;input&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег &lt;button&gt; создаёт кнопку.">&lt;button&gt;</span>.
   </p>
 
-  <p>
+  <p data-key="card1_p9">
     HTML также поддерживает мультимедиа:
-    <span class="tooltip" data-tooltip="Тег <audio> для звука.">&lt;audio&gt;</span>,
-    <span class="tooltip" data-tooltip="Тег <video> для видео.">&lt;video&gt;</span>.
+    <span class="tooltip" data-tooltip="Тег &lt;audio&gt; для звука.">&lt;audio&gt;</span>,
+    <span class="tooltip" data-tooltip="Тег &lt;video&gt; для видео.">&lt;video&gt;</span>.
   </p>
 
-  <p>
+  <p data-key="card1_p10">
     И не забывай про семантику:
-    <span class="tooltip" data-tooltip="Семантические теги описывают смысл содержимого, например <header>, <footer>, <section>.">семантические теги</span>
+    <span class="tooltip" data-tooltip="Семантические теги описывают смысл содержимого, например &lt;header&gt;, &lt;footer&gt;, &lt;section&gt;.">семантические теги</span>
     помогают поисковым системам и упрощают поддержку кода.
   </p>
   <button id="strbtn2" data-key="sbtnt" class="button">Начать тест</button>

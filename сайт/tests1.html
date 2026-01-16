@@ -15,7 +15,7 @@
 </head>
 <body class="bd">
     <header>
-    <div class="logo">
+    <div id="lg" class="logo">
       <img src="Apple.png" alt="Логотип">
     </div>
 
@@ -36,45 +36,45 @@
       </ul>
     </div>
   </header>
-<main class="test-box">
-  <h1>HTML — тест</h1>
+<main class="testbox">
+  <h1 class="base" data-key="tests1_title">HTML — тест</h1>
 
   <div class="question" data-correct="1">
-    <p>HTML — это:</p>
-    <label><input type="radio" name="q1"> Язык программирования</label>
-    <label><input type="radio" name="q1"> Язык разметки</label>
-    <label><input type="radio" name="q1"> Графический редактор</label>
+    <p data-key="tests1_q1_p">HTML — это:</p>
+    <label><input type="radio" name="q1"><span data-key="tests1_q1_a0"> Язык программирования</span></label>
+    <label><input type="radio" name="q1"><span data-key="tests1_q1_a1"> Язык разметки</span></label>
+    <label><input type="radio" name="q1"><span data-key="tests1_q1_a2"> Графический редактор</span></label>
   </div>
 
   <div class="question" data-correct="0">
-    <p>Какой тег создаёт ссылку?</p>
-    <label><input type="radio" name="q2">&lt;a&gt;</label>
-    <label><input type="radio" name="q2">&lt;div&gt;</label>
-    <label><input type="radio" name="q2">&lt;p&gt;</label>
+    <p data-key="tests1_q2_p">Какой тег создаёт ссылку?</p>
+    <label><input type="radio" name="q2"><span data-key="tests1_q2_a0">&lt;a&gt;</span></label>
+    <label><input type="radio" name="q2"><span data-key="tests1_q2_a1">&lt;div&gt;</span></label>
+    <label><input type="radio" name="q2"><span data-key="tests1_q2_a2">&lt;p&gt;</span></label>
   </div>
 
   <div class="question" data-correct="2">
-    <p>Где размещается видимое содержимое страницы?</p>
-    <label><input type="radio" name="q3">&lt;head&gt;</label>
-    <label><input type="radio" name="q3">&lt;title&gt;</label>
-    <label><input type="radio" name="q3">&lt;body&gt;</label>
+    <p data-key="tests1_q3_p">Где размещается видимое содержимое страницы?</p>
+    <label><input type="radio" name="q3"><span data-key="tests1_q3_a0">&lt;head&gt;</span></label>
+    <label><input type="radio" name="q3"><span data-key="tests1_q3_a1">&lt;title&gt;</span></label>
+    <label><input type="radio" name="q3"><span data-key="tests1_q3_a2">&lt;body&gt;</span></label>
   </div>
 
   <div class="question" data-correct="1">
-    <p>Какой тег создаёт абзац?</p>
-    <label><input type="radio" name="q4">&lt;div&gt;</label>
-    <label><input type="radio" name="q4">&lt;p&gt;</label>
-    <label><input type="radio" name="q4">&lt;span&gt;</label>
+    <p data-key="tests1_q4_p">Какой тег создаёт абзац?</p>
+    <label><input type="radio" name="q4"><span data-key="tests1_q4_a0">&lt;div&gt;</span></label>
+    <label><input type="radio" name="q4"><span data-key="tests1_q4_a1">&lt;p&gt;</span></label>
+    <label><input type="radio" name="q4"><span data-key="tests1_q4_a2">&lt;span&gt;</span></label>
   </div>
 
   <div class="question" data-correct="0">
-    <p>Какой атрибут задаёт ссылку?</p>
-    <label><input type="radio" name="q5">href</label>
-    <label><input type="radio" name="q5">src</label>
-    <label><input type="radio" name="q5">class</label>
+    <p data-key="tests1_q5_p">Какой атрибут задаёт ссылку?</p>
+    <label><input type="radio" name="q5"><span data-key="tests1_q5_a0">href</span></label>
+    <label><input type="radio" name="q5"><span data-key="tests1_q5_a1">src</span></label>
+    <label><input type="radio" name="q5"><span data-key="tests1_q5_a2">class</span></label>
   </div>
 
-  <button class="bt2" onclick="checkTest()">Проверить</button>
+  <button class="bt2" onclick="checkTest()" data-key="checkBtn">Проверить</button>
   <p id="result"></p>
 </main>
   <script src="script.js"></script>
